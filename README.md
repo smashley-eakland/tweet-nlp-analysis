@@ -91,6 +91,8 @@ Given the above best performing models and metrics, hold out dataset to be fed i
 
 Worth exploring at a later date is adding the 'neutral sentiment' tweets back into the data for modeling and analysis. The data prep has been started below and is staged for modeling at a later time due to time and resource constraints. Also worth analysis is a deeper dive into the tweet specific words (hashtags, acronyms), as well as identifying which products and brands are identified with which sentiments (positive/negative/neutral).
 
+### For more information or questions, please reach out to Jose Harper at <harper.jose@gmail.com> or Ashley Eakland at <ashley@eakland.net>.
+
 ## Repository Structure (subject to change)
 * Images
 * Docs
