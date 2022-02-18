@@ -87,6 +87,37 @@ Given the above best performing models and metrics, hold out dataset to be fed i
 * Final Precision - 88.23 %
 <center> <img src="./Images/rf_test_final.png" alt="Random Forest Confusion Matrix - Final Test Eval" width="500"/> </center>
 
+#### Twitter Specific Language Iteration Revisions
+#### Iterating through additional Models with removal of Twitter Specific Stopwords
+* Unsure of value of hashtag or tweet specific language. Adding to secondary stopwords list and running models separately to check performance again for exhaustability.
+
+#### CountVectorizer - 2500 Word Vocab less Twitter-specific vocab for analysis
+* From above analysis, limiting CountVect to 2500 word vocab for Twitter-specific stopword removal.
+
+#### TF-IDF Unrestricted and 835 Restricted Vocabs - Less the Twitter-Specific Stopwords
+
+### Modeling
+#### Remodel and Check Performance on Top Performing Models Above
+* Checking performance only on top performers above at this time due to time constraints.
+
+##### Multinomial Bayes performs similarly here without the Twitter Stopwords using CountVect with 2500 word Vocab.
+* Final Precision: 88.45%
+* Final Accuracy: 86%
+
+##### RandomForest with unrestricted performs almost identically as the previous models without the Twitter Stopwords.¶
+* Final Precision: 88.26%
+* Final Accuracy: 88.16%
+
+##### RandomForest with restricted vocab performs slightly worse in terms of accuracy without the Twitter Stopwords compared to it's unrestricted counterpart.¶
+* Final Precision: 88.26%
+* Final Accuracy: 87.49%
+
+##### KNN Evaluated again as sanity check. Performs about the same comparatively to the previous KNN model, a bit better in terms of accuracy.¶
+* Final Precision: ~ 87%
+* Final Accuracy: 84%
+
+
+
 ## Further Analysis
 
 Worth exploring at a later date is adding the 'neutral sentiment' tweets back into the data for modeling and analysis. The data prep has been started below and is staged for modeling at a later time due to time and resource constraints. Also worth analysis is a deeper dive into the tweet specific words (hashtags, acronyms), as well as identifying which products and brands are identified with which sentiments (positive/negative/neutral).
