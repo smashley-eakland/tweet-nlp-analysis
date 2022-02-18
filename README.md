@@ -131,7 +131,7 @@ At a later date, we feel it would be worth exploring adding the 'neutral sentime
 ## Repository Structure (subject to change)
 * Images
 * Docs
-* NLP.pptx
+* Presentation.PDF
 * NLP.ipynb
 
 
