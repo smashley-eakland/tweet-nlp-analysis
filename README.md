@@ -98,6 +98,8 @@ Given the above best performing models and metrics seen on the validation data a
 ### Twitter Specific Language Iteration Revisions - additional Models with removal of Twitter Specific Stopwords
 
 #### Top Performer - RandomForest with 4150 word vocabulary - utilizing TF-IDF Vectorizer
+* Final Precision: 88.26%
+* Final Accuracy: 88.16%
 
 <center> <img src="./Images/twitter_removed_rf.png" alt="Random Forest Confusion Matrix - Final Test Eval with Twitter Stopwords Removed" width="500"/> </center>
 
@@ -105,15 +107,15 @@ Given the above best performing models and metrics seen on the validation data a
 * Final Precision: 88.45%
 * Final Accuracy: 86%
 
-##### RandomForest with unrestricted performs almost identically as the previous models without the Twitter Stopwords.¶
+##### RandomForest with unrestricted performs almost identically as the previous models without the Twitter Stopwords.
 * Final Precision: 88.26%
 * Final Accuracy: 88.16%
 
-##### RandomForest with restricted vocab performs slightly worse in terms of accuracy without the Twitter Stopwords compared to it's unrestricted counterpart.¶
+##### RandomForest with restricted vocab performs slightly worse in terms of accuracy without the Twitter Stopwords compared to it's unrestricted counterpart.
 * Final Precision: 88.26%
 * Final Accuracy: 87.49%
 
-##### KNN Evaluated again as sanity check. Performs about the same comparatively to the previous KNN model, a bit better in terms of accuracy.¶
+##### KNN Evaluated again as sanity check. Performs about the same comparatively to the previous KNN model, a bit better in terms of accuracy.
 * Final Precision: ~ 87%
 * Final Accuracy: 84%
 
